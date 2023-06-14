@@ -1,0 +1,163 @@
+* {
+  font-family: "acumin-pro", sans-serif ;
+  font-weight: 400;
+  font-style: normal;
+  /* margin: 0;
+  padding: 0; */
+/* overflow-x: hidden !important; */
+}
+
+h2,  h3 {
+  overflow: hidden;
+}
+img{
+  overflow-x: hidden;
+}
+.navbar{
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* background-color: #0057ff !important; */
+    background-color: rgba(82,193,247,255)!important;
+    position: sticky !important;
+}
+
+.navbar a img{
+  height: 30px;
+  width: 40px !important;
+}
+.navbar-brand {
+  font-size: 25px;
+  /* margin-left: 30px; */
+}
+.navbar-brand img {
+  width: 250px !important;
+  height: 80px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.nav-link {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-control{
+width: 220px;
+/* height: 30px; */
+}
+
+.btn-1 {
+  background-color: #f18d10;
+  font-size: 14px;
+  color: white;
+}
+.btn-1:hover {
+background-color: white;
+color:  #f18d10 ;
+}
+.btn-2 {
+  font-size: 14px;
+  background-color: black;
+  color: white;
+}
+.btn-2:hover {
+color: black;
+background-color: white;
+}
+
+.poster img{
+  width: 100vw;
+} 
+
+/* card */
+.card-ss{
+  padding: 30px !important;
+}
+.card-ss h2{
+  font-weight: 600;
+}
+.card-ss h3{
+  font-weight: 600;
+}
+.card-ss p{
+  font-weight: 400;
+}
+
+/* last-poster */
+.last-poster{
+  background-color: rgba(82,193,247,255);
+  padding: 40px;
+  /* width: 100vw !important; */
+  overflow-x: hidden;
+}
+.last-poster img{
+width: 90%px!important;
+height: auto;
+}
+.first-ss{
+  margin-top: 80px ;
+}
+.middle-ss{
+  margin-top: 200px;
+}
+
+/* social-media-start */
+
+#social-media{
+  padding: 100px 0;
+}
+#social-media p{
+ font-size: 36px;
+ font-weight: 600;
+ margin-bottom: 30px;
+}
+
+.social-icons img{
+  width: 60px;
+  transition: 0.5s;
+}
+.social-icons a:hover img{
+  transform: translateY(-10px);
+}
+
+/* social-media-end */
+
+ /* footer */
+ .footer .col-md-4{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-bottom: 40px;
+ }
+
+ /* extra js */
+
+ /* #signup_btn_true{
+  display: none !important;
+ }
+ #login_btn_true{
+  display: none !important;
+ }
+ #logout_btn_true{
+  display: none !important;
+ }
+ 
+ #signup_btn_false{
+  display: grid !important;
+ }
+ #login_btn_false{
+  display: grid !important;
+ }
+ #logout_btn_false{
+  display: grid !important;
+ } */
+
+
+@media (max-width:720px) {
+  .first-ss{
+    margin-top:0px!important;
+  }
+  .middle-ss{
+    margin-top:0px !important;
+  }
+}
+
