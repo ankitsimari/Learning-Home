@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        #form_box {
+            width: 100vw;
+            height: 90vh;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            width: 380px;
+            height: auto;
+               box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+               padding: 20px;
+        }
+
+        form input,
+        select
+         {
+            margin: 10px;
+            width: 90% !important;
+        }
+        a{
+            margin: 10px;
+        }
+
+        @media (max-width:420px) {
+            form {
+                width: 250px;
+                /* height: 400px; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="./index.html" class="btn btn-outline-primary">Home</a>
+    <div id="form_box" class="">
+
+
+        <form action="" class="">
+
+            <input type="Text" placeholder="First name" class="form-control" id="first_name">
+            <input type="Text" placeholder="Last name" class="form-control" id="last_name">
+            <input type="email" placeholder="Email" class="form-control" id="email">
+            <input type="text" placeholder="Password" class="form-control" id="password">
+            <select class="form-select" aria-label="Default select example" id="gender">
+                <option selected value="">Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+
+            <a class="btn btn-outline-danger" id="submit_btn">Submit</a>
+        </form>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script>
+
+    let first_name = document.getElementById("first_name");
+    let last_name = document.getElementById("last_name");
+    let email = document.getElementById("email");
+    let password = document.getElementById("password");
+    let gender = document.getElementById("gender");
+    let submit_btn = document.getElementById("submit_btn");
+
+    let arr = JSON.parse(localStorage.getItem("details")) || [];
+    submit_btn.addEventListener("click", () => {
+        let obj = {
+            first_name: first_name.value,
+            last_name: last_name.value,
+            email: email.value,
+            password: password.value,
+            gender: gender.value,
+        }
+
+
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i].email == obj.email) {
+                alert("Email already registered");
+                return;
+            }
+        }
+
+        if (obj.first_name == "" || obj.last_name == "" || obj.email == "" || obj.password == "" || obj.gender == "") {
+            alert("Fill all the Details");
+        }
+        else {
+
+            arr.push(obj);
+            localStorage.setItem("details", JSON.stringify(arr));
+            alert("SingUp Successfully");
+            location.replace('./index.html')
+        }
+
+
+        // window.location.href = "./index.html"
+    })
+
+
+</script>
