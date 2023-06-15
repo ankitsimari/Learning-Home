@@ -1,124 +1,386 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- <script src="https://www.jquery-az.com/javascript/alert/dist/sweetalert-dev.js"></script>
+    <link rel="stylesheet" href="https://www.jquery-az.com/javascript/alert/dist/sweetalert.css"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <style>
-        #form_box {
-            width: 100vw;
-            height: 90vh;
-            display: flex;
-            /* flex-direction: column; */
-            justify-content: center;
-            align-items: center;
-        }
+      * {
+        font-family: "acumin-pro", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        /* margin: 0;
+  padding: 0; */
+        /* overflow-x: hidden !important; */
+      }
 
+      h2,
+      h3 {
+        overflow: hidden;
+      }
+
+      img {
+        overflow-x: hidden;
+      }
+
+      .navbar {
+        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        /* background-color: #0057ff !important; */
+        background-color: rgba(82, 193, 247, 255) !important;
+        position: sticky !important;
+      }
+
+      .navbar a img {
+        height: 30px;
+        width: 40px !important;
+      }
+
+      .navbar-brand {
+        font-size: 25px;
+        /* margin-left: 30px; */
+      }
+
+      .navbar-brand img {
+        width: 250px !important;
+        height: 80px;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      .nav-link {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .form-control {
+        width: 220px;
+      }
+
+      .btn-1 {
+        background-color: #f18d10;
+        font-size: 14px;
+        color: white;
+      }
+
+      .btn-1:hover {
+        background-color: white;
+        color: #f18d10;
+      }
+
+      .btn-2 {
+        font-size: 14px;
+        /* background-color: black;
+  color: white; */
+      }
+
+      /* .btn-2:hover {
+color: black;
+background-color: white;
+} */
+
+      /* nav-end */
+
+      /*  */
+      #form_box {
+        /* width: 100vw; */
+        height: 90vh;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(82, 193, 247, 255) !important;
+      }
+
+      form {
+        width: 380px;
+        height: auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      form input,
+      select {
+        margin: 10px;
+        width: 90% !important;
+      }
+
+      form a {
+        margin: 10px;
+      }
+
+      /* social-media-start */
+
+      #social-media {
+        padding: 100px 0;
+      }
+
+      #social-media p {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+
+      .social-icons img {
+        width: 60px;
+        transition: 0.5s;
+      }
+
+      .social-icons a:hover img {
+        transform: translateY(-10px);
+      }
+
+      /* social-media-end */
+
+      /* footer */
+      .footer button {
+        background-color: #f18d10;
+        color: white;
+      }
+
+      .footer button:hover {
+        color: #f18d10;
+        background-color: white;
+      }
+
+      @media (max-width: 420px) {
         form {
-            width: 380px;
-            height: auto;
-               box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-               padding: 20px;
+          width: 90%;
+          /* height: 400px; */
         }
-
-        form input,
-        select
-         {
-            margin: 10px;
-            width: 90% !important;
+        #form_box{
+          height: 60vh;
         }
-        a{
-            margin: 10px;
-        }
-
-        @media (max-width:420px) {
-            form {
-                width: 250px;
-                /* height: 400px; */
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- <a href="./index.html" class="btn btn-outline-primary">Home</a> -->
+    <!-- nav-start -->
 
-    <a href="./index.html" class="btn btn-outline-primary">Home</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bolder text-light" href="./index.html"
+          ><img src="/img/logo.png" alt="" /> &nbsp; &nbsp;Learning Home</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ps-4 ps-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold text-light"
+                aria-current="page"
+                href="#"
+                >For You</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-light" href="#">Discover</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-light" href="#">Live</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-light" href="#">Jobs</a>
+            </li>
+          </ul>
+          <div class="d-flex flex-column flex-lg-row">
+            <!-- <input type="text" class="form-control  rounded-pill mx-3 mx-lg-0 "> -->
+            <a
+              href="./login.html"
+              class="btn btn-1 fw-bold px-4 m-3 m-lg-0 mx-lg-3"
+              >Login</a
+            >
+            <a
+              href="./index.html"
+              class="btn btn-2 px-4 mx-3 mx-lg-0 me-xl-5 btn-outline-light"
+              >Home</a
+            >
+            <!-- <a  class="btn px-4 mx-3 btn-3 mx-lg-0 btn-outline-light me-xl-5 d-none">Logout</a> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav-end -->
     <div id="form_box" class="">
+      <form action="" class="">
+        <input
+          type="Text"
+          placeholder="First name"
+          class="form-control"
+          id="first_name"
+        />
+        <input
+          type="Text"
+          placeholder="Last name"
+          class="form-control"
+          id="last_name"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          class="form-control"
+          id="email"
+        />
+        <input
+          type="text"
+          placeholder="Password"
+          class="form-control"
+          id="password"
+        />
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          id="gender"
+        >
+          <option selected value="">Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
 
-
-        <form action="" class="">
-
-            <input type="Text" placeholder="First name" class="form-control" id="first_name">
-            <input type="Text" placeholder="Last name" class="form-control" id="last_name">
-            <input type="email" placeholder="Email" class="form-control" id="email">
-            <input type="text" placeholder="Password" class="form-control" id="password">
-            <select class="form-select" aria-label="Default select example" id="gender">
-                <option selected value="">Gender</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Other">Other</option>
-            </select>
-
-
-            <a class="btn btn-outline-danger" id="submit_btn">Submit</a>
-        </form>
-
-
+        <a class="btn btn-outline-danger" id="submit_btn">Submit</a>
+      </form>
     </div>
 
+    <!-- social-media-start -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-</body>
+    <section id="social-media" class="">
+      <div class="container text-center">
+        <p>FIND US ON SOCIAL MEDIA</p>
 
-</html>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/Ankit.Simari/"
+            ><img src="img/facebook-icon.png" alt=""
+          /></a>
+          <a href="https://www.instagram.com/ank_krs/"
+            ><img src="img/instagram-icon.png" alt=""
+          /></a>
+          <a href="https://twitter.com/"
+            ><img src="img/twitter-icon.png" alt=""
+          /></a>
+          <a href="https://wa.me/+919576508805"
+            ><img src="img/whatsapp-icon.png" alt=""
+          /></a>
+          <a href="https://www.linkedin.com/in/ankit-kumar-747786235/"
+            ><img src="img/linkedin-icon.png" alt=""
+          /></a>
+          <!-- <a href=""><img src="img/snapchat-icon.png" alt=""></a> -->
+        </div>
+      </div>
+    </section>
 
-<script>
+    <!-- social-media-end -->
 
-    let first_name = document.getElementById("first_name");
-    let last_name = document.getElementById("last_name");
-    let email = document.getElementById("email");
-    let password = document.getElementById("password");
-    let gender = document.getElementById("gender");
-    let submit_btn = document.getElementById("submit_btn");
+    <!-- footer-start -->
 
-    let arr = JSON.parse(localStorage.getItem("details")) || [];
-    submit_btn.addEventListener("click", () => {
+    <div class="container-fluid p-5 bg-black text-white">
+      <div class="row footer">
+        <div class="col-md-4">
+          <h1>Learning Home</h1>
+          <p>Learn from home</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Contact US</h3>
+          <ul class="ms-2 mt-3">
+            <li>
+              <p>LH Building Patna</p>
+            </li>
+            <li>
+              <p>+91 1234567890</p>
+            </li>
+            <li>
+              <p>abc@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <p><b>Call Back Request</b></p>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Your Contact Number"
+          />
+          <button type="button" class="btn mt-3">Get Call</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer-end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let first_name = document.getElementById("first_name");
+      let last_name = document.getElementById("last_name");
+      let email = document.getElementById("email");
+      let password = document.getElementById("password");
+      let gender = document.getElementById("gender");
+      let submit_btn = document.getElementById("submit_btn");
+
+      let arr = JSON.parse(localStorage.getItem("details")) || [];
+      submit_btn.addEventListener("click", () => {
         let obj = {
-            first_name: first_name.value,
-            last_name: last_name.value,
-            email: email.value,
-            password: password.value,
-            gender: gender.value,
-        }
-
-
+          first_name: first_name.value,
+          last_name: last_name.value,
+          email: email.value,
+          password: password.value,
+          gender: gender.value,
+        };
 
         for (let i = 0; i < arr.length; i++) {
-            if (arr[i].email == obj.email) {
-                alert("Email already registered");
-                return;
-            }
+          if (arr[i].email == obj.email) {
+            alert("Email already registered");
+            return;
+          }
         }
 
-        if (obj.first_name == "" || obj.last_name == "" || obj.email == "" || obj.password == "" || obj.gender == "") {
-            alert("Fill all the Details");
+        if (
+          obj.first_name == "" ||
+          obj.last_name == "" ||
+          obj.email == "" ||
+          obj.password == "" ||
+          obj.gender == ""
+        ) {
+          alert("Fill all the Details");
+        } else {
+          arr.push(obj);
+          localStorage.setItem("details", JSON.stringify(arr));
+          alert("SingUp Successfully");
+          // JSalert();
+          location.replace("./index.html");
         }
-        else {
-
-            arr.push(obj);
-            localStorage.setItem("details", JSON.stringify(arr));
-            alert("SingUp Successfully");
-            location.replace('./index.html')
-        }
-
 
         // window.location.href = "./index.html"
-    })
+      });
 
-
-</script>
+      function JSalert() {
+        swal("Congrats!", ", Your account is created!", "success");
+      }
+    </script>
+  </body>
+</html>

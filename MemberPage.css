@@ -1,0 +1,239 @@
+/* @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "acumin-pro", sans-serif ;
+    /* font-family: 'Lato', sans-serif; */
+}
+
+.navbar{
+    background-image: linear-gradient( to right, rgba(82,193,247,255), rgba(82,193,247,255) );
+    padding: 0 !important;
+}
+
+.navbar-brand h2{
+    font-weight: 800;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.navbar a img{
+  height: 30px;
+  width: 40px !important;
+}
+.navbar-brand {
+  font-size: 25px;
+  /* margin-left: 30px; */
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+
+.navbar-nav li a{
+   color: white;
+   font-weight: 600;
+   float: right;
+   text-align: left;
+}
+.navbar-nav li a:hover{
+   /* color: rgb(234, 154, 154); */
+   color: #f18d10;   
+}
+
+.fa-bars{
+    color: white;
+    font-size: 30px !important;
+}
+.navbar-toggler:focus{
+box-shadow: none;
+}
+
+
+/* banner-start */
+
+#banner{
+    background-image: linear-gradient( to right, rgba(82,193,247,255), rgba(82,193,247,255) );
+    padding-top: 5%;
+}
+
+.promo-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+.play-btn{
+    width: 45px;
+    margin: 20px;
+}
+
+/* banner-end */
+
+/* services-start */
+
+    #services{
+        padding: 80px 0;
+    }
+
+    .service-img{
+        width: 50%;
+        padding-top: 20px;
+    }
+
+    .services{
+        padding: 20px;
+    }
+    .services h4{
+        padding: 5px;
+        margin-top: 25px;
+    }
+
+    .underline{
+        border: 5px;
+        border-style: solid;
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+        width: 200px;
+        color: rgba(82,193,247,255)
+    }
+
+   .btn-primary{
+         box-shadow: none;
+         padding: 8px 25px;
+         border: none;
+         border-radius: 20px;
+         background-image: linear-gradient( to right, rgba(82,193,247,255), rgba(82,193,247,255) );
+    }
+
+
+/* services-end */
+
+/* about-start */
+
+#about-us{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-title{
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 8%;
+}
+
+
+#about-us ul{
+    margin-left: 20px;
+}
+
+#about-us ul li{
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+/* about-end */
+
+/* testimonial-start */
+
+#testimonial{
+    margin: 100px 0;
+}
+
+.testimonials{
+    border-left: 4px solid rgba(82,193,247,255);
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.testimonials img{
+   height: 60px;
+   width: 60px;
+   border-radius: 50%;
+   margin: 0 10px;
+}
+
+.user-details{
+    display: inline-block;
+    font-size: 12px;
+}
+
+/* testimonial-end */
+
+/* social-media-start */
+
+#social-media{
+    padding: 100px 0;
+}
+#social-media p{
+   font-size: 36px;
+   font-weight: 600;
+   margin-bottom: 30px;
+}
+
+.social-icons img{
+    width: 60px;
+    transition: 0.5s;
+}
+.social-icons a:hover img{
+    transform: translateY(-10px);
+}
+
+/* social-media-end */
+
+/* Footer-start */
+
+#footer{
+    background-image: linear-gradient( to right, rgba(82,193,247,255), rgba(82,193,247,255) );
+    color: white;
+}
+
+.footer-img{
+    width: 100%;
+}
+
+.footer-box{
+    padding: 20px;
+}
+
+.footer-box img{
+    width: 120px;
+    margin-bottom: 20px;
+}
+.footer-box .fa {
+  margin-right: 8px;
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding-top: 7px;
+  border-radius: 12px;
+  background-image: linear-gradient( to right, rgba(82,193,247,255), rgba(82,193,247,255) );
+}
+
+.footer-box .form-control{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0%;
+    margin-top: 25px;
+    max-width: 250px;
+}
+
+.footer-box .bg-light{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0%;
+    margin-top: 30px;
+}
+.footer-box .bg-light:hover{
+    background-color: rgba(82,193,27,255)!important;
+    color: white;
+}
+
+/* Footer-end */
+/* background-color: rgba(82,193,247,255)!important; */
