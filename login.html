@@ -7,9 +7,80 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
   <style>
+
+* {
+  font-family: "acumin-pro", sans-serif ;
+  font-weight: 400;
+  font-style: normal;
+  /* margin: 0;
+  padding: 0; */
+/* overflow-x: hidden !important; */
+}
+
+h2,  h3 {
+  overflow: hidden;
+}
+img{
+  overflow-x: hidden;
+}
+.navbar{
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* background-color: #0057ff !important; */
+    background-color: rgba(82,193,247,255)!important;
+    position: sticky !important;
+}
+
+.navbar a img{
+  height: 30px;
+  width: 40px !important;
+}
+.navbar-brand {
+  font-size: 25px;
+  /* margin-left: 30px; */
+}
+.navbar-brand img {
+  width: 250px !important;
+  height: 80px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.nav-link {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.form-control{
+width: 220px;
+}
+
+/* .btn-1 {
+  background-color: #f18d10;
+  font-size: 14px;
+  color: white;
+}
+.btn-1:hover {
+background-color: white;
+color:  #f18d10 ;
+} */
+.btn-1 {
+  font-size: 14px;
+  background-color: black;
+  color: white;
+}
+.btn-1:hover {
+color: black;
+background-color: white;
+}
+
+/* nav-end */
+
+
+
        #form_box {
-            width: 100vw;
-            height: 90vh;
+            /* width: 100vw; */
+            background-color: rgba(82,193,247,255)!important;
+            height: 90vh ;
             display: flex;
             /* flex-direction: column; */
             justify-content: center;
@@ -17,10 +88,12 @@
         }
 
         form {
+            background-color: white;
             width: 380px;
             height: auto;
                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                padding: 20px;
+               border-radius: 10px;
         }
 
         form input,
@@ -29,7 +102,7 @@
             margin: 10px;
             width: 90% !important;
         }
-        a{
+       form a{
             margin: 10px;
         }
 
@@ -53,15 +126,82 @@
             }
             #form_box {
             width: 100%;
-            height: auto;
+            height:50vh;
             display: grid;
            
         }
         }
+
+        /* social-media-start */
+
+#social-media{
+  padding: 100px 0;
+}
+#social-media p{
+ font-size: 36px;
+ font-weight: 600;
+ margin-bottom: 30px;
+}
+
+.social-icons img{
+  width: 60px;
+  transition: 0.5s;
+}
+.social-icons a:hover img{
+  transform: translateY(-10px);
+}
+
+/* social-media-end */
+
+ /* footer */
+.footer button{
+  background-color: #f18d10;
+  color: white;
+}
+.footer button:hover{
+  color: #f18d10;
+  background-color: white;
+}
   </style>
   <body>
 
-    <a href="./index.html" class="btn btn-outline-primary">Home</a>
+    <!-- nav-start -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+          <a class="navbar-brand fw-bolder text-light" href="./index.html"><img src="/img/logo.png" alt=""> &nbsp; &nbsp;Learning Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ps-4 ps-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-light" aria-current="page" href="#">For You</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-light" href="#">Discover</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-light" href="#">Live</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold  text-light" href="#">Jobs</a>
+              </li>
+            </ul>
+            <div class="d-flex flex-column flex-lg-row">
+              <!-- <input type="text" class="form-control  rounded-pill mx-3 mx-lg-0 "> -->
+              <a href="./signup.html" class="btn btn-1 fw-bold  px-4 m-3 m-lg-0 mx-lg-3">Signup</a>
+              <a href="./index.html" class="btn btn-2  px-4 mx-3 mx-lg-0  me-xl-5 btn-outline-light">Home</a>
+              <!-- <a  class="btn px-4 mx-3 btn-3 mx-lg-0 btn-outline-light me-xl-5 d-none">Logout</a> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- nav-end -->
+
+    <!-- <a href="./index.html" class="btn btn-outline-primary">Home</a> -->
     
     <div id="form_box" class="">
 
@@ -74,6 +214,55 @@
 
 
     </div>
+
+      <!-- social-media-start -->
+
+<section id="social-media" class="">
+
+    <div class="container text-center">
+        <p>FIND US ON SOCIAL MEDIA</p>
+  
+        <div class="social-icons">
+            <a href="https://www.facebook.com/Ankit.Simari/"><img src="img/facebook-icon.png" alt=""></a>
+            <a href="https://www.instagram.com/ank_krs/"><img src="img/instagram-icon.png" alt=""></a>
+            <a href="https://twitter.com/"><img src="img/twitter-icon.png" alt=""></a>
+            <a href="https://wa.me/+919576508805"><img src="img/whatsapp-icon.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/ankit-kumar-747786235/"><img src="img/linkedin-icon.png" alt=""></a>
+            <!-- <a href=""><img src="img/snapchat-icon.png" alt=""></a> -->
+        </div>
+        
+    </div>
+  
+  </section>
+  
+    <!-- social-media-end -->
+  
+    <!-- footer-start -->
+  
+    <div class="container-fluid p-5 bg-black text-white">
+      <div class="row footer">
+        <div class="col-md-4">
+          <h1>Learning Home</h1>
+          <p>Learn from home</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Contact US</h3>
+         <ul class="ms-2 mt-3">
+          <li><p>LH Building Patna</p></li>
+          <li><p>+91 1234567890</p></li>
+          <li><p>abc@gmail.com</p></li>
+         </ul>
+        </div>
+        <div class="col-md-4">
+          <p><b>Call Back Request</b></p>    
+          <input type="text" class="form-control" placeholder="Your Contact Number">
+          <button type="button"  class="btn mt-3">Get Call</button>
+        </div>
+      </div>
+    </div>
+  
+  
+    <!-- footer-end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
@@ -93,7 +282,7 @@ login_btn.addEventListener("click", ()=>{
             flag=true;
             localStorage.setItem("status",JSON.stringify(flag));
             alert("Login Successfully");
-            location.replace("./logedinPage.html")
+            location.replace("./MemberPage.html")
             return;
         }
     }

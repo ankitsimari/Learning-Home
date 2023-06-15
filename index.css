@@ -39,9 +39,9 @@ img{
     font-weight: 600;
 }
 
+
 .form-control{
 width: 220px;
-/* height: 30px; */
 }
 
 .btn-1 {
@@ -62,7 +62,7 @@ color:  #f18d10 ;
 color: black;
 background-color: white;
 }
-
+/* nav-end */
 .poster img{
   width: 100vw;
 } 
@@ -121,13 +121,14 @@ height: auto;
 /* social-media-end */
 
  /* footer */
- .footer .col-md-4{
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  margin-bottom: 40px;
- }
+.footer button{
+  background-color: #f18d10;
+  color: white;
+}
+.footer button:hover{
+  color: #f18d10;
+  background-color: white;
+}
 
  /* extra js */
 
