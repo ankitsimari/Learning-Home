@@ -59,6 +59,7 @@ box-shadow: none;
 
 #banner{
     background-image: linear-gradient( to right, rgba(82,193,247,255), rgba(82,193,247,255) );
+    /* background-color: rgba(82,193,247,255); */
     padding-top: 5%;
 }
 
@@ -77,9 +78,10 @@ box-shadow: none;
 
 /* services-start */
 
-    /* #services{
-        padding: 80px 0px;
-    } */
+    #services{
+        /* padding: 80px 0px; */
+        position: relative;
+    }
 
     .service-img{
         width: 100px;
@@ -102,6 +104,7 @@ box-shadow: none;
         margin: 10px;
         min-height: 400px;
         border-radius: 10px 30px;
+        /* color:#FFB3CB ; */
     }
     .services h4{
         padding: 5px;
@@ -125,7 +128,7 @@ box-shadow: none;
          border-radius: 20px;
          background-image: linear-gradient( to right, rgba(82,193,247,255), rgba(82,193,247,255) );
     }
-
+    
 
 /* services-end */
 
@@ -142,10 +145,20 @@ box-shadow: none;
     color: rgba(82,193,247,255);
 } */
 
-#next{
+.sliderbtns{
     position: absolute;
-    right: 10px;
-    top: 970px;
+    width: 100%;
+    top: 42%;
+    left: 50%;
+    transform: translateX( -50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+}
+
+#next{
+    position: relative;
+    left:65px;
     color: white;
     background-color: rgba(82,193,247,255);
     border-radius: 50%;
@@ -169,9 +182,8 @@ box-shadow: none;
   #prev{
     width: 60px;
     height: 60px;
-    position: absolute;
-    left: 10px;
-    top: 970px;
+    position: relative;
+    right: 65px;
     color: white;
     background-color: rgba(82,193,247,255);
     border-radius: 50%;
