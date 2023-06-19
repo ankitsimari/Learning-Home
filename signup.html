@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Signup Page</title>
     <!-- <script src="https://www.jquery-az.com/javascript/alert/dist/sweetalert-dev.js"></script>
     <link rel="stylesheet" href="https://www.jquery-az.com/javascript/alert/dist/sweetalert.css"> -->
     <link
@@ -185,26 +185,7 @@ background-color: white;
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ps-4 ps-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link fw-bold text-light"
-                aria-current="page"
-                href="#"
-                >For You</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold text-light" href="#">Discover</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold text-light" href="#">Live</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold text-light" href="#">Jobs</a>
-            </li>
-          </ul>
-          <div class="d-flex flex-column flex-lg-row">
+          <div class="d-flex ms-auto flex-column flex-lg-row">
             <!-- <input type="text" class="form-control  rounded-pill mx-3 mx-lg-0 "> -->
             <a
               href="./login.html"
@@ -368,19 +349,23 @@ background-color: white;
         ) {
           alert("Fill all the Details");
         } else {
+          // swal("Congrats!", ", Your account is created!", "success");
           arr.push(obj);
           localStorage.setItem("details", JSON.stringify(arr));
           alert("SingUp Successfully");
           // JSalert();
-          location.replace("./index.html");
+         window.location.replace("./login.html");
         }
 
-        // window.location.href = "./index.html"
       });
 
-      function JSalert() {
-        swal("Congrats!", ", Your account is created!", "success");
-      }
+      // function JSalert() {
+      //   swal("Congrats!", ", Your account is created!", "success");
+      // }
+
+
+    
     </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learning Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="paidMember.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/fol0utv.css">
+</head>
+
+<body>
+    <!-- navbar-start -->
+    <section id="nav-bar" class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid container-xxl">
+                <a class="navbar-brand text-light" href="#"><img src="/img/logo.png" alt=""
+                        class="mx-3 ms-0 ms-lg-5 mx-lg-4">Learning Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-uppercase">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <div class="dropdown ms-auto">
+                            <a class="btn text-white fw-bold dropdown-toggle" id="dropdown" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                User
+                            </a>
+                            <ul class="dropdown-menu bg-black text-lowercase">
+                                <li><a class="dropdown-item user_name " href="">user name</a></li>
+                                <li><a class="dropdown-item user_email " href="">user email</a></li>
+                                <li><a class="dropdown-item logout_btn" href="./index.html">Logout</a></li>
+
+                            </ul>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#courses">Courses</a>
+                        </li>
+                        <!-- <li class="nav-item">
+              <a class="nav-link" href="#about-us">About</a>
+            </li> -->
+                        <!-- <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Hired</a>
+            </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#social-media">Contact</a>
+                        </li>
+                        <li class="nav-item visually-hidden">
+                            <a class="nav-link" href="./plans.html">MemberShip</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- navbar-end -->
+
+    <!-- banner-start -->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-white">
+                    <p class="promo-title">BEST DIGITAL PLATFORM</p>
+                    <p class="promo-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                        natus earum est sit consectetur aperiam eos in quisquam suscipit?
+                    </p>
+                    <a href="#courses" class="btn btn-danger video_btn text-white text-decoration-none"><img
+                            src="img/play.png" class="play-btn me-3" alt="">watch Tutorials</a>
+                </div>
+
+
+                <div class="col-md-6 text-center">
+                    <img src="img/home2.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+
+        <img src="img/wave1.png" class="w-100" alt="">
+    </section>
+    <!-- banner-end -->
+
+    <!-- courses-start -->
+
+    <div class="conatiner p-4 my-4 courses " id="courses">
+        <h1 class="fw-bold text-danger text-center">Courses</h1>
+        <hr class="underline d-block m-auto ">
+       <div class="d-flex justify-content-between mt-3">
+        <select class="form-select  border-success" aria-label="Default select example" id="filtering">
+            <option selected value="">Choose Course</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Bootstrap">Bootstrap</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="React js">React js</option>
+            <option value="Nord js">Nord js</option>
+        </select>
+
+        <select class="form-select  border-success" aria-label="Default select example" id="sorting">
+            <option selected value="">Sort By Name</option>
+            <option value="Asc">Ascending</option>
+            <option value="Dsc">Descending</option>
+        </select>
+       </div>
+
+        <div class="row text-center " id="box">
+
+        </div>
+    </div>
+
+
+    <!-- courses-end -->
+
+
+    <!-- social-media-start -->
+
+    <section id="social-media" class="bg-secondary-subtle">
+
+        <div class="container text-center">
+            <p>FIND US ON SOCIAL MEDIA</p>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Ankit.Simari/"><img src="img/facebook-icon.png" alt=""></a>
+                <a href="https://www.instagram.com/ank_krs/"><img src="img/instagram-icon.png" alt=""></a>
+                <a href="https://twitter.com/"><img src="img/twitter-icon.png" alt=""></a>
+                <a href="https://wa.me/+919576508805"><img src="img/whatsapp-icon.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/ankit-kumar-747786235/"><img src="img/linkedin-icon.png"
+                        alt=""></a>
+                <!-- <a href=""><img src="img/snapchat-icon.png" alt=""></a> -->
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- social-media-end -->
+
+    <!-- footer-start -->
+
+    <section id="footer">
+        <img src="img/wave2.png" alt="" class="footer-img">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-box">
+                    <h2>Learning Home</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                        natus earum est sit consectetur aperiam eos in quisquam suscipit
+                    </p>
+                </div>
+
+                <div class="col-md-4 footer-box">
+                    <p><b>CONTACT US</b></p>
+                    <p> <i class="fa fa-location-dot"></i>World trade Center, Bangalore</p>
+                    <p> <i class="fa fa-phone"></i>+1 0123456789</p>
+                    <p> <i class="fa fa-envelope"></i>abc@email.com</p>
+                </div>
+
+                <div class="col-md-4 footer-box">
+                    <p><b>SUBSCRIBE NEWSLETTER</b></p>
+                    <input type="email" class="form-control rounded-2" placeholder="Your email">
+                    <button type="button" class="btn bg-light rounded-2">Subscribe</button>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- footer-end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        let data = [
+            { name: "HTML", image: "https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg", link: "https://www.youtube.com/watch?v=BsDoLVMnmZs&ab_channel=CodeWithHarry" },
+            { name: "CSS", image: "https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-css/sta-je-css.png", link: "https://www.youtube.com/watch?v=ua24185-rcw&list=PLH8iQ-rTfw2-lp7oienYPq9JT3rc-B_9p&ab_channel=CodeWithHarry" },
+            { name: "Bootstrap", image: "https://blog.getbootstrap.com/assets/img/bootstrap-social.png", link: "https://www.youtube.com/watch?v=vpAJ0s5S2t0&ab_channel=CodeWithHarry" },
+            { name: "JavaScript", image: "https://www.classcentral.com/report/wp-content/uploads/2022/06/JavaScript-BCG-Banner-icons.png", link: "https://www.youtube.com/watch?v=ER9SspLe4Hg&list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR&ab_channel=CodeWithHarry" },
+            { name: "React js", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXeYGtxwIGs4Zgzb_NwO17t2JZq5uPpJ2-yQ&usqp=CAU", link: "https://www.youtube.com/watch?v=-mJFZp84TIY&list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt&ab_channel=CodeWithHarry" },
+            { name: "Nord js", image: "https://buddy.works/guides/covers/test-nodejs-app/share-nodejs-logo.png", link: "https://www.youtube.com/watch?v=YFmgNiimfyk&list=PLkjj2kDfcimCACXch5S_SJV2mgnzYIJ74&ab_channel=CodeWithHarry" },
+            { name: "HTML", image: "https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg", link: "https://www.youtube.com/watch?v=BsDoLVMnmZs&ab_channel=CodeWithHarry" },
+            { name: "CSS", image: "https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-css/sta-je-css.png", link: "https://www.youtube.com/watch?v=ua24185-rcw&list=PLH8iQ-rTfw2-lp7oienYPq9JT3rc-B_9p&ab_channel=CodeWithHarry" },
+            { name: "Bootstrap", image: "https://blog.getbootstrap.com/assets/img/bootstrap-social.png", link: "https://www.youtube.com/watch?v=vpAJ0s5S2t0&ab_channel=CodeWithHarry" },
+            { name: "JavaScript", image: "https://www.classcentral.com/report/wp-content/uploads/2022/06/JavaScript-BCG-Banner-icons.png", link: "https://www.youtube.com/watch?v=ER9SspLe4Hg&list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR&ab_channel=CodeWithHarry" },
+            { name: "React js", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXeYGtxwIGs4Zgzb_NwO17t2JZq5uPpJ2-yQ&usqp=CAU", link: "https://www.youtube.com/watch?v=-mJFZp84TIY&list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt&ab_channel=CodeWithHarry" },
+            { name: "Nord js", image: "https://buddy.works/guides/covers/test-nodejs-app/share-nodejs-logo.png", link: "https://www.youtube.com/watch?v=YFmgNiimfyk&list=PLkjj2kDfcimCACXch5S_SJV2mgnzYIJ74&ab_channel=CodeWithHarry" },
+            { name: "HTML", image: "https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg", link: "https://www.youtube.com/watch?v=BsDoLVMnmZs&ab_channel=CodeWithHarry" },
+            { name: "CSS", image: "https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-css/sta-je-css.png", link: "https://www.youtube.com/watch?v=ua24185-rcw&list=PLH8iQ-rTfw2-lp7oienYPq9JT3rc-B_9p&ab_channel=CodeWithHarry" },
+            { name: "Bootstrap", image: "https://blog.getbootstrap.com/assets/img/bootstrap-social.png", link: "https://www.youtube.com/watch?v=vpAJ0s5S2t0&ab_channel=CodeWithHarry" },
+            { name: "JavaScript", image: "https://www.classcentral.com/report/wp-content/uploads/2022/06/JavaScript-BCG-Banner-icons.png", link: "https://www.youtube.com/watch?v=ER9SspLe4Hg&list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR&ab_channel=CodeWithHarry" },
+            { name: "React js", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXeYGtxwIGs4Zgzb_NwO17t2JZq5uPpJ2-yQ&usqp=CAU", link: "https://www.youtube.com/watch?v=-mJFZp84TIY&list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt&ab_channel=CodeWithHarry" },
+            { name: "Nord js", image: "https://buddy.works/guides/covers/test-nodejs-app/share-nodejs-logo.png", link: "https://www.youtube.com/watch?v=YFmgNiimfyk&list=PLkjj2kDfcimCACXch5S_SJV2mgnzYIJ74&ab_channel=CodeWithHarry" },
+
+        ];
+
+        let row = document.getElementById("box");
+
+        function display(data) {
+            row.innerHTML = "";
+
+            data.forEach((e) => {
+                let col = document.createElement("div");
+                col.setAttribute("class", "col-md-6 col-lg-4 py-4 cart");
+
+                let innner_div = document.createElement("div");
+
+                let img = document.createElement("img");
+                img.setAttribute("src", e.image);
+                img.setAttribute("class", "img-fluid");
+
+
+
+                let name = document.createElement("h2");
+                name.innerText = e.name;
+
+
+                let button = document.createElement("a");
+                button.innerText = "Watch Now"
+                button.setAttribute("href", e.link);
+                button.setAttribute("class", "btn btn-outline-danger");
+
+                innner_div.append(img, name, button);
+                col.append(innner_div);
+                row.append(col)
+
+            })
+
+        };
+
+        display(data);
+
+        // filter
+
+        let filter = document.querySelector("#filtering");
+
+        filter.addEventListener("change", () => {
+            if (filter.value == "") {
+                display(data)
+            }
+            else {
+                let filtered = data.filter((el) => {
+                    if (filter.value == el.name) {
+                        return el;
+                    }
+                });
+                display(filtered);
+            }
+        })
+
+        // sort
+
+
+        let sorting = document.getElementById("sorting");
+
+        sorting.addEventListener("change", () => {
+            console.log("hh");
+            if (sorting.value === "") {
+                display(data);
+            } else if (sorting.value === "Asc") {
+                let result = [...data].sort((a, b) => {
+                    let a1 = a.name.toUpperCase();
+                    let b1 = b.name.toUpperCase();
+                    if (a1 < b1) {
+                        return -1;
+                    } else if (a1 > b1) {
+                        return 1;
+                    } else {
+                        return 0;
+                    }
+                });
+                display(result);
+            } else if (sorting.value === "Dsc") {
+                let result = [...data].sort((a, b) => {
+                    let a1 = a.name.toUpperCase();
+                    let b1 = b.name.toUpperCase();
+                    if (a1 > b1) {
+                        return -1;
+                    } else if (a1 < b1) {
+                        return 1;
+                    } else {
+                        return 0;
+                    }
+                });
+                display(result);
+            }
+        });
+
+
+
+        // logout
+
+        let logout_btn = document.querySelector(".logout_btn");
+
+        logout_btn.addEventListener("click", () => {
+            alert("Do you really want to logout");
+            localStorage.setItem("status", JSON.stringify(flag));
+        });
+
+        let user = JSON.parse(localStorage.getItem("user"));
+        let dropdown = document.getElementById("dropdown");
+        let user_email = document.querySelector(".user_email");
+        let user_name = document.querySelector(".user_name");
+        let titleName = document.querySelector("title")
+        user.map((e) => {
+            dropdown.innerText = e.name;
+            user_email.innerText = e.email;
+            user_name.innerText = e.first_name + " " + e.last_name;
+            titleName.innerText = e.first_name +"`s" + " Dashboard"
+        })
+
+
+
+        // 
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
