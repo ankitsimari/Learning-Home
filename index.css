@@ -80,7 +80,7 @@ background-color: white;
   align-items: center;
   padding: 10px !important;
   text-align: center;
-  box-shadow: rgba(82,193,247,255) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   /* margin: 10px; */
   min-height: 400px;
   border-radius: 10px 30px;

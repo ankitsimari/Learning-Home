@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Learning Home</title>
+  <title>Buy Membership</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,20 +34,29 @@
               <a class="nav-link" href="#services">Courses</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about-us">About us</a>
+              <a class="nav-link" href="#about-us">About</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#testimonial">Hired</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#social-media">Contact</a>
             </li>
+            <div class="dropdown ms-auto">
+              <a class="btn text-white fw-bolder dropdown-toggle" id="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                User
+              </a>
+              <ul class="dropdown-menu bg-black text-lowercase">
+                <li><a class="dropdown-item user_name btn-outline-light" href="">user name</a></li>
+                <li><a class="dropdown-item user_email btn-outline-light" href="">user email</a></li>
+                <li><a class="dropdown-item logout_btn btn-outline-light" href="./index.html">Logout</a></li>
+                
+              </ul>
+            </div>
             <li class="nav-item">
-              <a class="nav-link" href="./plans.html">Buy Courses</a>
+              <a class="nav-link" href="./plans.html">MemberShip</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link logout_btn btn-outline-light" href="./index.html">Logout</a>
-            </li>
+           
           </ul>
         </div>
       </div>
@@ -65,9 +74,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
             natus earum est sit consectetur aperiam eos in quisquam suscipit?
           </p>
-          <a href="https://www.youtube.com/@CodeWithHarry" class=" text-white text-decoration-none"><img
-              src="img/play.png" class="play-btn" alt="">watch
-            Tutorials</a>
+          <a href="./plans.html" class="btn btn-danger text-white text-decoration-none">Buy Membership Now</a>
         </div>
 
 
@@ -131,7 +138,7 @@
         </div>
       </div>
 
-      <a href="./plans.html" class="btn btn-primary mb-5">All Services</a>
+      <a href="./plans.html" class="btn btn-primary mb-5">Buy Membership</a>
       
     </div>
     <div class="sliderbtns container mx-auto">
@@ -160,13 +167,13 @@
         <div class="col-md-6 about-us">
           <p class="about-title text-center text-lg-start ms-lg-4">Why we're different</p>
           <ul>
-            <li>Believe in doing business with honesty</li>
-            <li>Believe in doing business with honesty</li>
-            <li>Believe in doing business with honesty</li>
-            <li>Believe in doing business with honesty</li>
-            <li>Believe in doing business with honesty</li>
-            <li>Believe in doing business with honesty</li>
-            <li>Believe in doing business with honesty</li>
+            <li>We Believe in Proving Quality Education</li>
+            <li>We Believe in Proving Quality Education</li>
+            <li>We Believe in Proving Quality Education</li>
+            <li>We Believe in Proving Quality Education</li>
+            <li>We Believe in Proving Quality Education</li>
+            <li>We Believe in Proving Quality Education</li>
+            <li>We Believe in Proving Quality Education</li>
           </ul>
         </div>
 
@@ -261,8 +268,8 @@
 
         <div class="col-md-4 footer-box">
           <p><b>SUBSCRIBE NEWSLETTER</b></p>
-          <input type="email" class="form-control" placeholder="your email">
-          <button type="button" class="btn bg-light ">Subscribe</button>
+          <input type="email" class="form-control rounded-2" placeholder="Your email">
+          <button type="button" class="btn bg-light rounded-2">Subscribe</button>
 
         </div>
 
@@ -287,6 +294,17 @@
     logout_btn.addEventListener("click", () => {
       alert("Do you really want to logout");
       localStorage.setItem("status", JSON.stringify(flag));
+    });
+
+    let user = JSON.parse(localStorage.getItem("user"));
+    let dropdown = document.getElementById("dropdown");
+    let user_email = document.querySelector(".user_email");
+    let user_name = document.querySelector(".user_name");
+
+    user.map((e)=>{
+      dropdown.innerText = e.name;
+      user_email.innerText= e.email;
+      user_name.innerText = e.first_name +" "+e.last_name;
     })
 
 
@@ -384,7 +402,7 @@
     let text = [
       { name: "Learning Home", color: "white" },
       { name: "Learn From Home", color: "#000C7D" },
-      { name: "BEST ONLINE PLATFORM", color: "yellow" }
+      { name: "Best Online Platform", color: "yellow" }
     ]
 
     let j = 0;
@@ -408,9 +426,9 @@
 
     let service = [
       { image: "https://blog.edmentum.com/sites/blog.edmentum.com/files/styles/blog_image/public/images/Benchmark%20Assessments_0_0.png?itok=MjeVXeJV", name: "STUDENT'S GROWTH ", text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eum tempore quaerat nam repellendus et?" },
-      { image: "https://assets.codementor.io/pair-programming/pair-programming-open-graph.png", name: "PAIR PROGRAMMING", text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque animi quas, nesciunt quos iure quo molestias vel delectus alias illo laudantium excepturi sint, minima voluptates ." },
-      { image: "https://i.pinimg.com/originals/c5/47/b2/c547b29b067eb121d2f05cfcd6adcf95.jpg", name: "QUALITY ASSIGNMENTS ", text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit eligendi veritatis consequuntur dolorum temporibus neque qui expedita rem iusto tempore!" },
-      { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZwyW-TxgqdBlgnLLHcFODUgpRBjhpA24p35jkyGlIeCIOWPodTQIp_y6Sp6vjHj5zU3Y&usqp=CAU", name: "QUALIFIED MENTORS", text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex a atque iste, architecto asperiores dignissimos," },
+      { image: "https://assets.codementor.io/pair-programming/pair-programming-open-graph.png", name: "PAIR PROGRAMMING", text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque animi quas, nesciunt quos iure quo molestias vel delectus alias illo laudantium." },
+      { image: "https://i.pinimg.com/originals/c5/47/b2/c547b29b067eb121d2f05cfcd6adcf95.jpg", name: " ASSIGNMENTS ", text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit eligendi veritatis consequuntur dolorum temporibus neque qui expedita rem iusto tempore!" },
+      { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZwyW-TxgqdBlgnLLHcFODUgpRBjhpA24p35jkyGlIeCIOWPodTQIp_y6Sp6vjHj5zU3Y&usqp=CAU", name: "QUALIFIED MENTORS", text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.asperiores dignissimos," },
       { image: "https://www.eschoolnews.com/files/2013/04/Data.jpg", name: "STUDENTS DATA", text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eum tempore quaerat nam repellendus et?" },
       { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTxMzsmaUMc5RHOzSaFjEv1CVqSc0Z5FDTZi3L2dlEfCPcJ730p1ZeLPEobN6K85W1NJM&usqp=CAU", name: "SKILL BOOSTER CAMP", text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit eligendi veritatis consequuntur tempore!" },
     ]

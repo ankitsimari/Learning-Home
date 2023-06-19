@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        .navbar {
+            background: #2e3192;
+            background: -moz-linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+            background: -webkit-linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+            background: linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+            padding: 0 !important;
+        }
+
+        .navbar-brand h2 {
+            font-weight: 800;
+            height: 40px;
+            padding-left: 20px;
+        }
+
+        .navbar a img {
+            height: 30px;
+            width: 40px !important;
+        }
+
+        .navbar-brand {
+            font-size: 25px;
+            /* margin-left: 30px; */
+        }
+
+        .navbar-nav li {
+            padding: 0 10px;
+        }
+
+
+        .navbar-nav li a {
+            color: white;
+            font-weight: 600;
+            float: right;
+            text-align: left;
+        }
+
+        /* .navbar-nav li a:hover{
+   color: #f18d10;   
+} */
+
+        .fa-bars {
+            color: white;
+            font-size: 30px !important;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+
+        #form_box {
+            /* width: 100vw; */
+            height: 90vh;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+            background: #2e3192;
+            background: -moz-linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+            background: -webkit-linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+            background: linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+        }
+
+        form {
+            width: 380px;
+            height: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 20px;
+            /* background-color: white; */
+            border-radius: 10px;
+            background: #ffedd4;
+            background: -moz-linear-gradient(-63deg, #ffedd4 0%, #ffb9a2 100%);
+            background: -webkit-linear-gradient(-63deg, #ffedd4 0%, #ffb9a2 100%);
+            background: linear-gradient(-63deg, #ffedd4 0%, #ffb9a2 100%);
+        }
+
+        form input,
+        select {
+            margin: 10px;
+            width: 90% !important;
+        }
+
+        form a {
+            margin: 10px;
+        }
+
+
+        /* social-media-start */
+
+        #social-media {
+            padding: 100px 0;
+        }
+
+        #social-media p {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .social-icons img {
+            width: 60px;
+            transition: 0.5s;
+        }
+
+        .social-icons a:hover img {
+            transform: translateY(-10px);
+        }
+
+        /* social-media-end */
+
+        /* Footer-start */
+
+        #footer {
+            background: #2e3192;
+            background: -moz-linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+            background: -webkit-linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+            background: linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+            color: white;
+        }
+
+        .footer-img {
+            width: 100%;
+        }
+
+        .footer-box {
+            padding: 20px;
+        }
+
+        .footer-box img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        .footer-box .fa {
+            margin-right: 8px;
+            font-size: 25px;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            padding-top: 7px;
+            border-radius: 12px;
+            background-image: linear-gradient(to right, rgba(82, 193, 247, 255), rgba(82, 193, 247, 255));
+        }
+
+        .footer-box .form-control {
+            box-shadow: none !important;
+            border: none;
+            border-radius: 0%;
+            margin-top: 25px;
+            max-width: 250px;
+        }
+
+        .footer-box .bg-light {
+            box-shadow: none !important;
+            border: none;
+            border-radius: 0%;
+            margin-top: 30px;
+        }
+
+        .footer-box .bg-light:hover {
+            background-color: rgba(82, 193, 27, 255) !important;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar-start -->
+    <section id="nav-bar" class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid container-xxl">
+                <a class="navbar-brand fw-bold text-light" href="#"><img src="/img/logo.png" alt=""
+                        class="mx-3 ms-0 ms-lg-5 mx-lg-4">Learning Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-uppercase">
+
+                        <li class="nav-item">
+                            <a class=" btn btn-outline-light me-lg-5" href="./MemberPage.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- navbar-end -->
+    <div id="form_box" class="">
+        <form action="" class="">
+            <input type="Text" placeholder="Card holder name" class="form-control mb-3" id="first_name" />
+            <input type="text" placeholder="Card" class="form-control" id="Card_name" />
+            <div class="d-flex justify-content-between">
+                <input type="email" placeholder="expiry date" class="form-control w-50" id="expiry" />
+                <input type="text" placeholder="cvv" class="form-control me-4 w-25" id="cvv" />
+            </div>
+
+
+            <a class="btn btn-outline-danger" id="otp_btn">Send OTP</a>
+        </form>
+    </div>
+
+
+    <!-- social-media-start -->
+
+    <section id="social-media" class="bg-light ">
+
+        <div class="container text-center">
+            <p>FIND US ON SOCIAL MEDIA</p>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Ankit.Simari/"><img src="img/facebook-icon.png" alt=""></a>
+                <a href="https://www.instagram.com/ank_krs/"><img src="img/instagram-icon.png" alt=""></a>
+                <a href="https://twitter.com/"><img src="img/twitter-icon.png" alt=""></a>
+                <a href="https://wa.me/+919576508805"><img src="img/whatsapp-icon.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/ankit-kumar-747786235/"><img src="img/linkedin-icon.png"
+                        alt=""></a>
+                <!-- <a href=""><img src="img/snapchat-icon.png" alt=""></a> -->
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- social-media-end -->
+
+    <!-- footer-start -->
+
+    <section id="footer">
+        <img src="img/wave2.png" alt="" class="footer-img">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-box">
+                    <h2>Learning Home</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                        natus earum est sit consectetur aperiam eos in quisquam suscipit
+                    </p>
+                </div>
+
+                <div class="col-md-4 footer-box">
+                    <p><b>CONTACT US</b></p>
+                    <p> <i class="fa fa-location-dot"></i>World trade Center, Bangalore</p>
+                    <p> <i class="fa fa-phone"></i>+1 0123456789</p>
+                    <p> <i class="fa fa-envelope"></i>abc@email.com</p>
+                </div>
+
+                <div class="col-md-4 footer-box">
+                    <p><b>SUBSCRIBE NEWSLETTER</b></p>
+                    <input type="email" class="form-control" placeholder="your email">
+                    <button type="button" class="btn bg-light ">Subscribe</button>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+<script>
+    let form = document.querySelector("form")
+    let otp_btn = document.getElementById("otp_btn");
+    let Card_name = document.getElementById("Card_name");
+    let first_name = document.getElementById("first_name");
+    let expiry_date = document.getElementById("expiry");
+    let cvv = document.getElementById("cvv");
+
+    // let otp="false";
+    let submit;
+    otp_btn.addEventListener("click", () => {
+
+        if (first_name.value == "") {
+
+            alert("Enter Name");
+        }
+        else {
+
+            if (Card_name.value.length == 16) {
+
+                if (expiry_date.value != "") {
+                    if (cvv.value != "") {
+
+                        let div = document.createElement("div");
+                        let otp_input = document.createElement("input");
+                        otp_input.setAttribute("placeholder", "Enter OTP");
+                        otp_input.setAttribute("class", "form-control");
+                        otp_btn.setAttribute("class", "d-none");
+
+
+
+                        submit = document.createElement("a");
+                        submit.innerText = "Make Payment";
+                        submit.setAttribute("class", "btn btn-outline-danger ms-3");
+                        // submit.setAttribute("class","btn-outline-danger")
+
+
+
+                        div.append(otp_input);
+                        form.append(div, submit);
+                        let user = JSON.parse(localStorage.getItem("user"));
+                        let member = JSON.parse(localStorage.getItem("member")) || [];
+                        submit.addEventListener("click", () => {
+                            user.map((e) => {
+
+                                if (otp_input.value.length == 4) {
+                                    let obj = {
+                                        name: e.name,
+                                        email: e.email,
+                                        first_name: e.first_name,
+                                        last_name: e.last_name,
+                                        membership: "Yes"
+                                    }
+                                    member.push(obj);
+                                    console.log(member)
+                                    localStorage.setItem("member", JSON.stringify(member))
+                                    alert("Payment Successful");
+                                    location.replace("./paidMember.html");
+                                }
+                                else {
+                                    alert("Enter correct OTP");
+                                }
+                            })
+
+                        });
+
+                    }
+                    else {
+                        alert("Enter cvv")
+                    }
+                }
+                else {
+                    alert("Enter Expiry date of your card")
+                }
+
+            }
+            else {
+                alert("Enter Valid Card Number")
+            }
+        }
+
+
+
+
+
+
+
+    });
+
+
+
+
+</script>

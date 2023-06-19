@@ -6,49 +6,38 @@ body {
 /* navbar-start */
 
 
-.navbar{
-    background-image: linear-gradient( to right, rgba(82,193,247,255), rgba(82,193,247,255) );
+h2,  h3 {
+    overflow: hidden;
+  }
+  img{
+    overflow-x: hidden;
+  }
+  .newnav{
+    background: #2e3192;
+    background: -moz-linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+    background: -webkit-linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+    background: linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+      position: sticky !important;
+  }
+  
+  .navbar a img{
+    height: 30px;
+    width: 40px !important;
+  }
+  .navbar-brand {
+    font-size: 25px;
+    /* margin-left: 30px; */
+  }
+  .navbar-brand img {
+    width: 250px !important;
+    height: 80px;
     padding: 0 !important;
-}
-
-.navbar-brand h2{
-    font-weight: 800;
-    height: 40px;
-    padding-left: 20px;
-}
-
-.navbar a img{
-  height: 30px;
-  width: 40px !important;
-}
-.navbar-brand {
-  font-size: 25px;
-  /* margin-left: 30px; */
-}
-
-.navbar-nav li{
-    padding: 0 10px;
-}
-
-
-.navbar-nav li a{
-   color: white;
-   font-weight: 600;
-   float: right;
-   text-align: left;
-}
-.navbar-nav li a:hover{
-   /* color: rgb(234, 154, 154); */
-   color: #f18d10;   
-}
-
-.fa-bars{
-    color: white;
-    font-size: 30px !important;
-}
-.navbar-toggler:focus{
-box-shadow: none;
-}
+    margin: 0 !important;
+  }
+  .nav-link {
+      font-size: 16px;
+      font-weight: 600;
+  }
 
 
 
@@ -57,11 +46,14 @@ box-shadow: none;
 
 
 .body-parent{
-    background-color: rgba(82,193,247,255);
+    background: #2e3192;
+    background: -moz-linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+    background: -webkit-linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+    background: linear-gradient(to right, #2e3192 1%, #1bffff 100%);
 }
 
 .red-text {
-    color: red;
+    color: darkblue;
 }
 
 .red-text-large {
@@ -109,13 +101,17 @@ li{
     
 }
 
-.bg-blue {
-    background-color: rgb(9, 9, 61) !important;
-    color: white;
+.dark_card{
+    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+.light_card{
+    background: #fdfbfa; background: -moz-linear-gradient(to right,  #fdfbfa 0%,#e2d1c4 100%); background: -webkit-linear-gradient(to right,  #fdfbfa 0%,#e2d1c4 100%); background: linear-gradient(to right,  #fdfbfa 0%,#e2d1c4 100%);
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
 
 .card {
-    min-width: 300px !important;
+    /* min-width: 300px !important; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .bottom-red {
@@ -139,6 +135,16 @@ align-items: baseline !important;
     margin-left: 4rem
 }
 
+.btn-danger:hover{
+    /* border: 1px solid red !important; */
+    background-color: white !important;
+    color: red !important;
+}
+
+/* .btn-success:hover{
+    background-color: red !important;
+    color: white!important;
+} */
 /* card-end */
 
 
@@ -166,7 +172,10 @@ align-items: baseline !important;
 /* Footer-start */
 
 #footer{
-    background-image: linear-gradient( to right, rgba(82,193,247,255), rgba(82,193,247,255) );
+    background: #2e3192;
+    background: -moz-linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+    background: -webkit-linear-gradient(to right, #2e3192 1%, #1bffff 100%);
+    background: linear-gradient(to right, #2e3192 1%, #1bffff 100%);
     color: white;
 }
 
